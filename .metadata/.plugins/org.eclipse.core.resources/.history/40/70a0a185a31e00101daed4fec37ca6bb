@@ -1,0 +1,15 @@
+package practical_notes;
+
+public class Practice2 {
+    public static void main(String[] args) {
+        String[] str = {"Ganesh"};
+        
+        for(String i : str) {
+        	if(i==  "n") {
+        		System.out.println(i);
+        		break;
+        	}
+        	
+        }
+    }
+}

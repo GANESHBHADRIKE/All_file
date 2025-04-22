@@ -1,0 +1,22 @@
+package methods;
+
+public class ReturnValue {
+	
+	static int Mymethod(int y) {
+		y= 10 + y;
+		return y;
+		
+	}
+	
+	
+		
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+			Mymethod(5);
+		
+	}
+
+}

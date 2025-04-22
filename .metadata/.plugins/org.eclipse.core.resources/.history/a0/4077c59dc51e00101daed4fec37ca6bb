@@ -1,0 +1,43 @@
+package oops_concepts;
+
+class Parent{
+	
+	private int pin;
+	public int accountNo = 654852;
+	protected String name = "Ganesh"; 
+	
+	public void setpin(int pincode) {
+		pin = pincode;
+	}
+	
+	public int getpin() {
+		return pin;
+	}
+	
+	
+}
+class child extends Parent{
+	
+	public void accounts() {
+		
+		System.out.println(accountNo);
+		System.out.println(name);
+		
+	}
+		
+	
+}
+
+public class Encapsulation{
+
+	public static void main(String[]args) {
+		
+		child cd = new child();
+		cd.accounts();
+		Parent pt = new Parent();
+		pt.setpin(123456);
+		
+	}
+	
+	
+}

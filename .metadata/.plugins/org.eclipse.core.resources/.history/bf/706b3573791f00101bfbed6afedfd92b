@@ -1,0 +1,9 @@
+package src.practical_notes;
+
+public enum LEVEL {
+	
+	SMALL,
+	MEDIUM,
+	LARGE
+
+}

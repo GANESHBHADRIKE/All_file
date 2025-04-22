@@ -1,0 +1,18 @@
+package methods;
+
+public class BasicMethod {
+	
+	static void MyMethod(String fname) {
+		
+		System.out.println("this is"+fname);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyMethod("Ganesh");
+		
+		
+
+	}
+
+}

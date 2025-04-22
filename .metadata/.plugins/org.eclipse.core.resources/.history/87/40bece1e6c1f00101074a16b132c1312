@@ -1,0 +1,29 @@
+package oops_concepts;
+
+public class Enumeration {
+	
+	enum Level{
+		
+		LOW,
+		MEDIUM,
+		HIGH
+	}
+
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Level  myvar = Level.LOW;
+		System.out.println(myvar);
+		
+		switch(Level) {
+			
+		case SMALL:
+			System.out.println("pizza order small");
+			
+		}
+
+	}
+
+}

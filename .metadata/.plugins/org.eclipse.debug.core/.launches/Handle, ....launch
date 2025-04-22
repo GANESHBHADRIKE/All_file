@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+    <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="selenium"/>
+    <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+    <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
+    <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+        <listEntry value="selenium.Staticdropdown"/>
+        <listEntry value="selenium.Alerts"/>
+        <listEntry value="selenium.CoreJavaBrushUp"/>
+        <listEntry value="selenium.Dropdown"/>
+        <listEntry value="selenium.Handle"/>
+        <listEntry value="selenium.Locators2"/>
+        <listEntry value="selenium.Assertion"/>
+        <listEntry value="selenium.Iframe1"/>
+        <listEntry value="selenium.Greenitco"/>
+        <listEntry value="selenium.updatedropdown"/>
+        <listEntry value="selenium.Test1"/>
+        <listEntry value="selenium.Array"/>
+        <listEntry value="selenium.Allinone"/>
+        <listEntry value="selenium.Test11"/>
+        <listEntry value="selenium.Locators"/>
+        <listEntry value="selenium.Locator3"/>
+        <listEntry value="selenium.Window_handle"/>
+    </listAttribute>
+    <listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+    <listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+    <stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+    <intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

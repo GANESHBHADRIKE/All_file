@@ -1,0 +1,27 @@
+package oops_concepts;
+
+class Bike{
+	
+	public void sound(String brum) {
+		
+		System.out.println("Bike make a sound:"+brum);
+	}
+}
+
+class Tempo extends Bike{
+public void sound(String pie) {
+		
+		System.out.println("Tempo make a sound:"+pie);
+	}
+}
+
+public class Overriding {
+    public static void main(String[] args) {
+    	
+    	Bike bk = new Bike();
+    	bk.sound("dhoom machale");
+    	Bike tem = new Tempo();
+    	tem.sound("mai nikla");
+       
+    }
+}

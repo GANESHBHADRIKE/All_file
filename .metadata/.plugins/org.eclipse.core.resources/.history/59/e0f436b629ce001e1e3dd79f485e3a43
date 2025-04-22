@@ -1,0 +1,15 @@
+package learning;
+
+public class MyMethods {
+
+	public void mymet() {
+		System.out.println("this is my method");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyMethods()
+
+	}
+
+}

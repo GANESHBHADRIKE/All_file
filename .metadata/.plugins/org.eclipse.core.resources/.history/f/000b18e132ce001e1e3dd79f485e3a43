@@ -1,0 +1,23 @@
+package learning;
+
+abstract  class Main {
+	 
+	public String  fname = "Ganesh";
+	public int age = 25;
+	public abstract void Mymethod();
+	
+	class Student extends Main{
+		public int graductionyear = 2022;
+		public void Mymethod() {
+			System.out.println("Studying all day long");
+			
+		}
+		
+	}
+
+	
+		
+
+	}
+
+

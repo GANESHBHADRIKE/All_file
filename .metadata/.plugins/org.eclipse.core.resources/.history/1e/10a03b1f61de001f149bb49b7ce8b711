@@ -1,0 +1,94 @@
+package rahulshettyacademy.tests;
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class StandAloneTest {
+	
+	public static void main(String[] args) {
+	
+	
+	WebDriver driver = new ChromeDriver();
+	WebDriverManager.chromedriver().setup();
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	
+	driver.get("https://rahulshettyacademy.com/client/");
+	driver.manage().window().maximize();
+	
+	String productname = "IPHONE 13 PRO";
+//	Login page Credentials
+	driver.findElement(By.id("userEmail")).sendKeys("bhadrikeganesh@gmail.com");
+	driver.findElement(By.id("userPassword")).sendKeys("Bhadrike@1998");
+	driver.findElement(By.id("login")).click();
+	
+	
+// 	waiting Until all the product on the page to be load
+	WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
+	
+//	Finding that all product on the screen and collecting in the List 
+	List<WebElement> Products = driver.findElements(By.cssSelector(".mb-3"));
+	
+//	collecting the name of the productName by using b tag name from the Product list 
+	WebElement prod = Products.stream().filter(Product ->
+	
+//	and comparing it with the actual name store in the variable productname("ZARA COAT 3")
+	Product.findElement(By.cssSelector("b")).getText().equals(productname)).findFirst().orElse(null);
+	
+	
+//	After getting the match of the name of the product click on the Add to cart button 
+// 	the css travel to the name of the product to the last button of that contant
+	prod.findElement(By.cssSelector(".card-body button:last-of-type")).click();
+	
+
+//	This is a visibility of element waiting for the product added to cart successfully Toast message on the screen
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
+	
+//	this is for invisibility of the message	
+	wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
+	
+//	click on the cart button header on the page
+	driver.findElement(By.cssSelector("[routerlink*='cart']")).click();
+	
+	
+//	Grab all the product added to the cart and store it in to cartproducts variable
+	List <WebElement> cartproducts =  driver.findElements(By.cssSelector(".cartSection h3"));
+	
+//	this will search your productname("ZARA COAT 3") from the cartproduct
+	Boolean Match = cartproducts.stream().anyMatch(cartproduct -> cartproduct.getText().equalsIgnoreCase(productname) );
+//	Assertion will the product is found in the cart or not
+	Assert.assertTrue(Match);
+//	If true then it will click on the checkout button
+	driver.findElement(By.cssSelector(".totalRow button")).click();
+	
+//	It has been landed on the payment page...
+//	By using action class it will type india and select on the India button from the drop down button
+
+	Actions a = new Actions(driver);
+	a.sendKeys(driver.findElement(By.cssSelector("[placeholder='Select Country']")),"india").build().perform();
+// It will wait until the dropdown is loaded properly
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
+// 	click India button
+	driver.findElement(By.xpath("//button[contains(@class,'ta-item')][2]")).click();
+	
+//	It will click on the place order button
+	driver.findElement(By.cssSelector(".action__submit")).click();
+	
+//	It will Grab the Thankyou for the order text and 	
+	String confirmMessage = driver.findElement(By.cssSelector(".hero-primary")).getText();
+// 	And check the grab text is equal to actual text
+	Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+	driver.quit();
+	
+}
+}

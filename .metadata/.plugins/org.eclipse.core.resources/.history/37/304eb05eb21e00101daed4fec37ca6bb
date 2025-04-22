@@ -1,0 +1,37 @@
+package programs;
+
+public class PrimeNumber {
+
+	public static void main(String[] args) {
+
+		int num = 29;
+		boolean isPrime = true;
+
+		// Step 1: check if number is less than or equal to 1
+		if (num <= 1) {
+			isPrime = false;
+		}
+
+		// Step 2: check divisibility from 2 to sqrt(num)
+		for (int i = 2; i <= Math.sqrt(num); i++) {
+			if (num % i == 0) {
+				isPrime = false;
+				break; // No need to check further
+			}
+		}
+
+		// Step 3: print result
+		if (isPrime) {
+			System.out.println(num + " is a Prime Number");
+		} else {
+			System.out.println(num + " is NOT a Prime Number");
+		}
+	}
+
+
+
+}
+
+
+
+}

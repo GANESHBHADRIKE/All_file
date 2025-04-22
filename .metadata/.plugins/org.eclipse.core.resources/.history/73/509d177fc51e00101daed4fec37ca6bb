@@ -1,0 +1,33 @@
+package oops_concepts;
+
+class Parent{
+	
+	private int pin = 1234;
+	public int accountNo = 654852;
+	protected String name = "Ganesh"; 
+	
+	
+}
+class child extends Parent{
+	
+	public void accounts() {
+		
+		System.out.println(accountNo);
+		System.out.println(name);
+		
+	}
+		
+	
+}
+
+public class Encapsulation{
+
+	public static void main(String[]args) {
+		
+		child cd = new child();
+		cd.accounts();
+		
+	}
+	
+	
+}

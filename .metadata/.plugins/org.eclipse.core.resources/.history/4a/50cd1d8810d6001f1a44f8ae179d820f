@@ -1,0 +1,23 @@
+package learnig.com;
+
+public class TypeCasting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// widening data type
+		
+//		int a = 45;
+//		double mydouble = a;
+//		System.out.println(mydouble);
+		
+		
+		double mydouble = 45.0d;
+		int  myint = mydouble;
+		System.out.println(myint);
+		
+		
+
+	}
+
+}

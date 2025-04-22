@@ -1,0 +1,16 @@
+package learning;
+
+abstract  class Main {
+	 
+	public String  fname = "Ganesh";
+	public int age = 25;
+	public abstract void Mymethod();
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

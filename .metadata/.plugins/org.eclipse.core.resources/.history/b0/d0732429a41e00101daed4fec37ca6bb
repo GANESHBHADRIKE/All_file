@@ -1,0 +1,14 @@
+package practical_notes;
+
+public class Practice2 {
+    public static void main(String[] args) {
+        int[] lts = {1,2,3,4};
+        		
+        		for(int i : lts) {
+        			System.out.println(i);
+        		}
+        		
+        		
+       
+    }
+}

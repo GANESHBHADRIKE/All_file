@@ -1,0 +1,23 @@
+package programs;
+
+public class PrimeNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int num = 644;
+		int prime = num%2;
+		System.out.println(prime);
+		if(num%1 == 0) {
+			System.out.println("prime");
+		}
+		else {
+			System.out.println("even");
+		}
+		
+			
+		}
+
+	
+
+}

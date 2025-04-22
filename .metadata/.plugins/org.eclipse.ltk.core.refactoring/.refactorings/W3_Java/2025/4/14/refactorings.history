@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;practical_notes.Practuce2.java&apos; to &apos;Classes.java&apos;&#x0D;&#x0A;- Original project: &apos;W3_Java&apos;&#x0D;&#x0A;- Original element: &apos;practical_notes.Practuce2.java&apos;&#x0D;&#x0A;- Renamed element: &apos;practical_notes.Classes.java&apos;" description="Rename compilation unit &apos;Practuce2.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;practical_notes{Practuce2.java" name="Classes.java" references="false" stamp="1743701007340" version="1.0"/>
+</session>

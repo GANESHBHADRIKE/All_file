@@ -1,0 +1,19 @@
+package oops_concepts;
+
+public class Constructor1 {
+	
+	
+	public Constructor1(String fname){
+		final int y =10;
+		int x = 5;
+		System.out.println(x + fname);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Constructor1 obj = new Constructor1("Ganesh");
+
+	}
+
+}

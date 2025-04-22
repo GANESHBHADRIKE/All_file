@@ -1,0 +1,24 @@
+package programs;
+
+public class VowelFinder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		 String str = "heloo world";
+		 String vowels = "aeiou";
+		 
+		 for(int i = 0;i<str.length();i++) {
+			 
+			  char ch = str.charAt(i);			//converting string into char
+			 if(vowels.indexOf(ch) != -1) {		//finding the single char value in vowels string
+				 System.out.print(ch);
+			 }
+			 
+		 }
+				 
+		 
+				 
+	}
+
+}

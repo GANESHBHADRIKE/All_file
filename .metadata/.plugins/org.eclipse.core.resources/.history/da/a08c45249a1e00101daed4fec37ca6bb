@@ -1,0 +1,21 @@
+package practical_notes;
+
+class Car{
+	
+	void mymethod() {
+		
+		System.out.print("Hello/t");
+		System.out.print("world !!");
+	}
+}
+
+public class Practice {
+	
+	public static void main(String args[]) {
+		
+		Car obj = new Car();
+		obj.mymethod();
+		
+	}
+
+}

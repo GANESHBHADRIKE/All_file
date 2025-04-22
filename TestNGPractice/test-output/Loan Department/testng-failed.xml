@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Loan Department]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.test.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Personal Loan(failed)">
+    <classes>
+      <class name="com.test.Test2">
+        <methods>
+          <include name="test1"/>
+          <include name="aftertestexecution"/>
+          <include name="Bfmethod"/>
+          <include name="arp"/>
+          <include name="timeoutMethod"/>
+          <include name="Afclass"/>
+          <include name="beforetestrun"/>
+          <include name="test2"/>
+          <include name="bfclass"/>
+          <include name="Bfsuite"/>
+        </methods>
+      </class> <!-- com.test.Test2 -->
+      <class name="com.test.Test1">
+        <methods>
+          <include name="test2"/>
+          <include name="test1"/>
+          <include name="crp"/>
+        </methods>
+      </class> <!-- com.test.Test1 -->
+      <class name="com.test.Test3">
+        <methods>
+          <include name="drp"/>
+          <include name="bftest"/>
+          <include name="apilogincarloan"/>
+          <include name="weblogincarloan"/>
+          <include name="Bfsuite"/>
+          <include name="mobilelogincarloan"/>
+        </methods>
+      </class> <!-- com.test.Test3 -->
+      <class name="com.test.Test4">
+        <methods>
+          <include name="apiloginhomeloan"/>
+          <include name="parametrize"/>
+          <include name="webloginhomeloan"/>
+          <include name="mobileloginhomeloan"/>
+          <include name="brp"/>
+        </methods>
+      </class> <!-- com.test.Test4 -->
+      <class name="com.test.Test5">
+        <methods>
+          <include name="parametrize"/>
+          <include name="datatocatch"/>
+        </methods>
+      </class> <!-- com.test.Test5 -->
+    </classes>
+  </test> <!-- Personal Loan(failed) -->
+</suite> <!-- Failed suite [Loan Department] -->

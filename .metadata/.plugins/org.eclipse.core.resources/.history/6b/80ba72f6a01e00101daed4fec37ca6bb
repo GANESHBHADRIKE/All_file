@@ -1,0 +1,22 @@
+package practical_notes;
+
+import java.util.Scanner;
+
+public class Practice2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i =0;
+		do {
+			System.out.println("1");
+			i++;
+		}
+
+
+		while(i<0) ;
+
+
+	}
+
+}
+

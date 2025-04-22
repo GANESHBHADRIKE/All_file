@@ -1,0 +1,18 @@
+package learning;
+
+public class Learning1 {
+	
+	int x = 5;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Learning1 myobj = new Learning1();
+		myobj.x = 25;
+		System.out.println(myobj.x);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department" parallel="tests" thread-count="10">
+	<parameter name="MainURL" value="www.Rahulshetty.com">
+  <test thread-count="5" name="Personal Loan">
+	  
+    <classes>
+		<parameter name="site" value="www.personalloan.com">
+		<class name="com.test.Test5">	
+		</class>
+		</parameter>
+	</classes>
+  </test>
+  
+    <test thread-count="5" name="car Loan">
+	  
+    <classes>
+		<parameter name="site" value="www.carlaon.com">
+		<class name="com.test.Test4"></class>
+		</parameter>
+	</classes>
+  </test>
+	</parameter>
+  
+  
+  
+</suite> <!-- Suite -->
+	

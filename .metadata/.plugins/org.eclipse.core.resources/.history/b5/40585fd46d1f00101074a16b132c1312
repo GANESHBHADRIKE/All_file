@@ -1,0 +1,40 @@
+package oops_concepts;
+
+public class Enumeration {
+	
+	enum Level{
+		
+		SMALL,
+		MEDIUM,
+		LARGE,
+		EXTRA_LARGE
+	}
+
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String select = "EXTRA_LARGE";
+		Level  myvar = Level.valueOf(select);
+		System.out.println(myvar);
+		
+		switch(myvar) {
+			
+		case SMALL:
+			System.out.println("pizza order small");
+			break;
+			
+		case MEDIUM:
+			System.out.println("pizza order Medium");
+			break;
+		case LARGE:
+			System.out.println("pizza order large");
+			break;
+		default:
+			System.out.println("not selected any thing");
+		}
+
+	}
+
+}

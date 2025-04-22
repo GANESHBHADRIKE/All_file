@@ -1,0 +1,21 @@
+package learnig.com;
+
+public class Learning {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stu
+		
+		int Myage = 17;
+		int Voterage = 18;
+		
+		if(Myage >= Voterage) {
+			System.out.println("eligible for voting");
+		}
+		else {
+			System.out.println("NOt eligible for voting");
+			
+		}
+
+	}
+
+}

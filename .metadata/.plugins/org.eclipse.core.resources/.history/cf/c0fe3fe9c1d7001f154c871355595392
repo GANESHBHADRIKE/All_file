@@ -1,0 +1,25 @@
+package learnig.com;
+
+public class ForLoop {
+
+	public static void main(String[] args) {
+		
+//		for(int i = 0; i < 10; i++) {
+//			if(i ==7) {
+//				continue;
+//			}
+//			System.out.println(i);
+//		}
+		
+		for(int i = 0; i<2;i++) {
+			System.out.println("outer loop "+i);
+			
+			
+			for(int j = 0; i<3;j++) {
+				System.out.println("inner loop "+j);
+				break;
+		}
+	}
+	
+	}
+}

@@ -1,0 +1,13 @@
+package learnig.com;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] str = {"Ganesh","Ramesh"};
+		str[1] = "Bhadrike";
+		System.out.println(str[1]);
+
+	}
+
+}

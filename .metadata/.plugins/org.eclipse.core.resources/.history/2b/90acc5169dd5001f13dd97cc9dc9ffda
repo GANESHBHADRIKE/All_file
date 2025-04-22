@@ -1,0 +1,23 @@
+package learnig.com;
+
+public class MainExample {
+
+	public static void main(String[] args) {
+		
+		String name = "John"; 
+		System.out.println(name);
+		int num1 = 3;
+		System.out.println(num1);
+		int num2 = 20;
+		System.out.println(num2);
+		
+		
+		
+        System.out.println("Hello, World!");
+
+//        // Print command-line arguments
+//        for (String arg : args) {
+//            System.out.println("Argument: " + arg);
+//        }
+    }
+}

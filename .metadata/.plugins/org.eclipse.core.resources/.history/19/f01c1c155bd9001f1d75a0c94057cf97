@@ -1,0 +1,17 @@
+package learnig.com;
+import java.util.Scanner;
+
+public class UserInput {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		System.out.println("Enter your name");
+		Scanner obj = new Scanner(System.in);
+		String username = obj.nextLine();
+		System.out.println(username);
+		
+	}
+
+}

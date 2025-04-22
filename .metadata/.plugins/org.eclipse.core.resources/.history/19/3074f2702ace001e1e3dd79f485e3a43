@@ -1,0 +1,18 @@
+package learning;
+
+public class ClassnObject {
+
+	
+	final int  x = 10;
+	
+	
+	public static void main(String[] args) {
+		
+		ClassnObject obj = new ClassnObject();
+		
+		System.out.println(obj.x);
+	}
+	
+	
+	
+}

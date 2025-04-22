@@ -1,0 +1,11 @@
+package learnig.com;
+package learnig.com;
+
+public class UserInput {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

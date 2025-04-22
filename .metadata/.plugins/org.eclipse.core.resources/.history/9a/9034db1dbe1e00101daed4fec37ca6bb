@@ -1,0 +1,33 @@
+package oops_concepts;
+
+class Animal{
+	
+	
+		public void sound(String animal) {
+		
+		System.out.println("Animal make sound"+animal);
+	}
+}
+
+class Parrot extends Animal{
+	
+	public void sound(String bird) {
+		
+		System.out.println("Animal make sound"+bird);
+	}
+}
+
+public class Overriding{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		 Animal an = new Animal();
+		 an.sound("tiger");
+		 
+		 Parrot pa = new Parrot();
+		 pa.sound("vitu vitu");
+
+	}
+
+}

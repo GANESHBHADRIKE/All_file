@@ -1,0 +1,20 @@
+package programs;
+
+public class FindCharFromString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "Ganesh";
+		char tofind = 'h';
+		
+		for(int i = 0;i<str.length();i++) {
+			
+			if(str.charAt(i) == tofind) {
+				System.out.println("Character " +tofind+ " found at "+i+" index");
+				break;
+			}
+		}
+
+	}
+
+}

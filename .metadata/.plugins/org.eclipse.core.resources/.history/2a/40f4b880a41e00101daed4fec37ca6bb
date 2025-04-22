@@ -1,0 +1,18 @@
+package practical_notes;
+
+public class Practice2 {
+    public static void main(String[] args) {
+        String[] lts = {"Ganesh","ramesh","bhadrike"};
+        		
+        		for(String i : lts) {
+        			if(i=="Ganesh") {
+        				System.out.println("found" +i);
+        				
+        			}
+        			
+        		}
+        		
+        		
+       
+    }
+}

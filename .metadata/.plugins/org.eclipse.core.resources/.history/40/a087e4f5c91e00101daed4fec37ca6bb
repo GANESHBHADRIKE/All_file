@@ -1,0 +1,24 @@
+package oops_concepts;
+
+abstract class Java{
+	
+	abstract void mymethod();
+}
+
+class Pig extends Java{
+	
+	void mymethod(){
+		System.out.println("this is abstract method");
+	}
+	
+}
+
+public class AbstractClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Java obj = new Pig();
+		obj.mymethod();
+	}
+
+}

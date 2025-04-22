@@ -1,0 +1,22 @@
+package oppsJava;
+
+public class ClassandObject {
+	
+	static class Myclass{
+		
+		int x ;			// Attribute
+		
+		static void MyFunction() {		//	Function or Method
+			
+			System.out.println("This is my Function");
+		}
+	}
+
+	public static void main(String[] args) {
+
+		Myclass obj = new Myclass();
+		obj.MyFunction();
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package methods;
+
+public class BaseicMethod {
+	
+	static void MyMethod() {
+		
+		System.out.println("this is a method");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//MyMethod();
+		
+		
+
+	}
+
+}

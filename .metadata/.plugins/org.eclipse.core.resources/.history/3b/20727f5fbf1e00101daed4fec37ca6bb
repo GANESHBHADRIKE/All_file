@@ -1,0 +1,27 @@
+package oops_concepts;
+
+class Animal {
+    public void sound(String animal) {
+        System.out.println("Animal makes sound: " + animal);
+    }
+}
+
+class Parrot extends Animal {
+    // Overriding the sound method in Animal
+    @Override
+    public void sound(String animal) {
+        System.out.println("Parrot makes sound: " + animal);
+    }
+}
+
+public class Overriding {
+    public static void main(String[] args) {
+        // Creating an object of Animal
+        Animal an = new Animal();
+        an.sound("tiger"); // Animal sound
+
+        // Upcasting: Animal reference, but Parrot object
+        Animal pa = new Parrot();
+        pa.sound("vitu vitu"); // Parrot sound (due to method overriding)
+    }
+}
