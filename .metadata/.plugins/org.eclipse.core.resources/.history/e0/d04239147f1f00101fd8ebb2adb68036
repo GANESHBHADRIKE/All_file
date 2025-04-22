@@ -1,0 +1,86 @@
+package selenium;
+
+import java.util.List;
+import org.testng.Assert;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Allinone {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ganesh Bhadrike\\eclipse-workspace\\selenium\\driver\\chromedriver.exe");
+//		WebDriver driver = new ChromeDriver();
+		
+		WebDriver driver = new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
+		driver.manage().window().maximize();
+		
+		
+		
+		// Radio Button example
+		driver.findElement(By.xpath("//input[@value='radio1']")).click();
+		
+		
+		
+		// Auto Suggestion DropDown list
+		Thread.sleep(2000);
+		driver.findElement(By.id("autocomplete")).sendKeys("ind"); // finf the element and pass the keys
+		Thread.sleep(1000);
+		List<WebElement> options = driver.findElements(By.cssSelector("li[class='ui-menu-item'] div"));  // Grab the element from the list and collect in the list
+		
+		for(WebElement option:options)									// for loop to find the item from the list
+		{
+			if(option.getText().equalsIgnoreCase("India"))
+			{
+				option.click();
+				break;
+			}
+		}
+		
+		//	Statics DropDown Example with Select Tag
+		
+		// creating the webelement and storing it in the dropdownelemnet variable
+		WebElement dropdownelement = driver.findElement(By.xpath("//select[@name='dropdown-class-example']"));
+		//	creating the instance of dropdown 
+		Select dropdown = new Select(dropdownelement);
+		
+		dropdown.selectByValue("option1");
+//		//or by value
+		
+//		dropdown.selectByIndex(1);
+//		//or by index value
+		
+		// or by text value
+//		dropdown.selectByVisibleText("Option3");
+		
+		
+		// Checkbox selecting
+		System.out.println(driver.findElement(By.cssSelector("input[id*='checkBoxOption1']")).isSelected());
+	
+		driver.findElement(By.cssSelector("input[id*='checkBoxOption1']")).click();
+		System.out.println(driver.findElement(By.cssSelector("input[id*='checkBoxOption1']")).isSelected());
+		
+		// linktext
+		//driver.findElement(By.linkText("Free Access to InterviewQues/ResumeAssistance/Material")).click();		// clicking on the link
+		
+		// travelling to parent to child and then sibling to sibling
+		
+		System.out.println(driver.findElement(By.xpath("//header/div/button/following-sibling::button[1]")).getText());
+		
+		driver.quit();
+		
+		
+		
+
+	}
+
+}
