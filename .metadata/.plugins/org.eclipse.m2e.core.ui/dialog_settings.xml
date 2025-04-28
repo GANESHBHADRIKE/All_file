@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="AmazonTesting"/>
+			<item value="JavaBasic"/>
 			<item value="SeleniumNew"/>
 			<item value="TestNG"/>
 			<item value="rahul"/>
@@ -9,6 +11,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="AmazonTesting"/>
+			<item value="JavaBasic"/>
 			<item value="SeleniumNew"/>
 			<item value="TestNG"/>
 			<item value="selenium-java"/>
@@ -37,6 +41,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Ganesh Bhadrike\OneDrive\Desktop\eclipse-workspace\Amazon"/>
 			<item value="C:\Users\Ganesh Bhadrike\eclipse-workspace\TestNG"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -49,7 +54,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
-		<item key="catalog" value="All Catalogs"/>
+		<item key="catalog" value="https://repo1.maven.org/maven2/archetype-catalog.xml"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -80,10 +85,16 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.ganeshbhadrike"/>
+			<item value="com.ganesh"/>
+			<item value="com.example.selenium"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Amazon"/>
+			<item value="Ganeshbhadrike"/>
+			<item value="SeleniumProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -98,5 +109,17 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
 	</section>
 </section>
