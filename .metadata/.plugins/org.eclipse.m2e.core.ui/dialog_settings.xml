@@ -85,6 +85,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="CucumberJava"/>
 			<item value="com.ganeshbhadrike"/>
 			<item value="com.ganesh"/>
 			<item value="com.example.selenium"/>
@@ -92,6 +93,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="CucumberJava"/>
 			<item value="Amazon"/>
 			<item value="Ganeshbhadrike"/>
 			<item value="SeleniumProject"/>

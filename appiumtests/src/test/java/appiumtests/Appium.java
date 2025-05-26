@@ -3,7 +3,9 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
@@ -16,42 +18,34 @@ public class Appium {
 	@Test
 	public void AppiumTest() throws MalformedURLException, URISyntaxException{
 		
-		//UiAutomator2Options options  = new UiAutomator2Options();
-			DesiredCapabilities options = new DesiredCapabilities();
-//		
-//		
-//		options.setCapability("platformName", "Android");
-//		options.setCapability("deviceName", "Ganesh"); // Change this to your device name
-//		options.setCapability("udid", "RZ8N60MM6EB");
-//		options.setCapability("platformVersion", "12");
-//        
-//		options.setCapability("appPackage", "com.sec.android.app.popupcalculator"); // Package name of the calculator app
-//		options.setCapability("appActivity", "com.sec.android.app.popupcalculator.Calculator"); // Activity name of the calculator app
-		
-	
-		
-//        
+		UiAutomator2Options options  = new UiAutomator2Options();
+
+		options.setCapability("platformName", "Android");
+		options.setCapability("deviceName", "Ganesh"); // Change this to your device name
+		options.setCapability("udid", "192.168.0.104:5555"
+				+ "");
+		options.setCapability("platformVersion", "12");
+		options.setCapability("appPackage", "com.sec.android.app.popupcalculator"); // Package name of the calculator app
+		options.setCapability("appActivity", "com.sec.android.app.popupcalculator.Calculator"); // Activity name of the calculator app
+		     
         System.out.println("Application launch....");
 		
-		
-		//options.setDeviceName("Ganesh");
-		//AndroidDriver driver = new AndroidDriver(new URI ("http://127.0.0.1:4723").toURL(),options);
-		
-		
-		try {
-			WebDriver driver = new RemoteWebDriver(new URI ("http://0.0.0.0:4723").toURL(),options);
 
-            // Wait for the app to launch (optional)
-            Thread.sleep(5000);
+        System.out.println("Launching Calculator App...");
+        AndroidDriver driver = new AndroidDriver(options);
+        System.out.println("Calculator App Launched!");
+        WebElement one = driver.findElement(By.xpath("//android.widget.Button[@content-desc='1']"));
+        WebElement plus = driver.findElement(By.xpath("//android.widget.Button[@content-desc=\'Plus\']"));
+        WebElement four = driver.findElement(By.xpath("//android.widget.Button[@content-desc=\'4\']"));
+        WebElement equal = driver.findElement(By.xpath("//android.widget.Button[@content-desc=\'Equal\']"));
 
-            // Your test code goes here
 
-            // Close the driver session
-            driver.quit();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-		
+        one.click();
+        plus.click();
+        four.click();
+        equal.click();
+        
+
 		
 	}
 

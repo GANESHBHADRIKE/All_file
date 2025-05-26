@@ -15,6 +15,7 @@ public class Practice {
 //		name.add("sham");
 //		name.add("adam");
 //		name.add("Adarsh");
+//		name.add("devansh");
 //		int count = 0;
 //		
 //		for(int i = 0;i<name.size();i++)

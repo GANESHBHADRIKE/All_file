@@ -3,7 +3,7 @@
 public class ClassnObject {
 
 	
-	 int  x = 10;
+	 public  int  x = 10;
 	
 	
 	public static void main(String[] args) {
